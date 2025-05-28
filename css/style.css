@@ -39,11 +39,11 @@ Version: 1.0
 /*** Miscellaneous ***/
 
 html {
-    height: 100%;
+    /* height: 100%; */
   }
   
   body {
-    height: 100%;
+    /* height: 100%; */
     font-family: "Livvic", sans-serif;
     font-size: 18px;
     background-color: #0b0b0b;
@@ -52,19 +52,23 @@ html {
   }
   
   #wrapper {
-    width: 100%;
-    overflow-x: auto;
+    /* width: 100%; */
+    /* overflow:scroll; */
+    display: block;
   }
-  
+  .border-red {
+    border: 1px solid red;
+  }
   main {
-    display: flex;
+    display: block;
+    flex-wrap: nowrap;
     /* flex-direction: column; */
   }
   
   section {
-    position: relative;
-    min-height: 100vh;
-    height: 100vh;
+    /* position: relative; */
+    /* min-height: 100vh; */
+    /* height: 100vh; */
   }
   
   .main-section {
@@ -330,9 +334,9 @@ html {
     margin-right: 150px;
     margin-left: 150px;
     text-align: center;
-    writing-mode: vertical-rl;
-    transform: scale(-1, -1);
-    height: 100vh;
+    /* writing-mode: vertical-rl; */
+    /* transform: scale(-1, -1); */
+    /* height: 100vh; */
   }
   
   .custom-title h3 {
@@ -536,7 +540,7 @@ html {
   
   .home {
     min-width: 100vw;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -604,15 +608,19 @@ html {
   .about {
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     z-index: 1;
+    flex-direction: column;
   }
   
   /* Infos */
   
   .about .info {
     display: flex;
-    padding-left: 150px;
+    /* padding-left: 150px; */
+  }
+  .gap-6{
+    gap: 3rem;
   }
   
   .about img.my-photo {
@@ -630,7 +638,7 @@ html {
     margin-top: 45px;
     margin-left: 40px;
     font-weight: 700;
-    position: relative;
+    /* position: relative; */
   }
   
   .about h2 span {
@@ -641,7 +649,7 @@ html {
   .about .infos {
     display: flex;
     margin: 45px 0 0 100px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
   }
   
   .about .infos ul li {
@@ -712,8 +720,12 @@ html {
     position: relative;
     display: flex;
     align-items: center;
+    
   }
+  .flex-direction-column {
+    flex-direction: column;
   
+  }
   .about .skills .skills-content {
     display: flex;
   }
@@ -780,7 +792,7 @@ html {
   }
   
   .about .timeline ol {
-    padding: 315px 0 315px 130px;
+    padding: 215px 0 215px 130px;
     transition: all 1s;
     margin: 0;
   }
@@ -931,6 +943,7 @@ html {
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
   }
   
   .facts:before {
@@ -1760,10 +1773,13 @@ html {
   
   /* [ RESPONSIVE ] */
   /*================================================== */
-  
+  .happy {
+    display: none;
+    flex-direction: column;
+  }
   @media (min-width: 1025px) {
     body:not(.blog-page) {
-      overflow: hidden;
+      /* overflow: hidden; */
     }
   
     .animated-layer,
