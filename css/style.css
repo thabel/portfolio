@@ -539,7 +539,7 @@ html {
   /*** HOME SECTION ***/
   
   .home {
-    min-width: 100vw;
+    /* min-width: 100vw; */
     /* width: 100vw; */
     display: flex;
     align-items: center;
@@ -780,6 +780,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: 150px;
   }
   
@@ -1012,19 +1013,21 @@ html {
   }
   
   /*** PORTFOLIO SECTION ***/
-  
+  .flex{
+    display: flex;
+    /* align-items: center; */
+  }
   .portfolio {
     display: flex;
     align-items: center;
     position: relative;
     z-index: 1;
   }
-  
-  .swiper-portfolio {
+/* .swiper-portfolio {
     width: 100%;
     height: 100vh;
     padding-right: 250px;
-  }
+  } */
   
   .portfolio .single-item {
     display: flex;
@@ -1186,7 +1189,7 @@ html {
     align-items: center;
     position: relative;
     z-index: 1;
-    padding-right: 150px;
+ 
   }
   
   .contact .boxes {
@@ -1571,6 +1574,7 @@ html {
     text-align: center;
     min-width: 250px;
     font-weight: 500;
+    margin: 0 auto;
   }
   
   .copyright > img {
