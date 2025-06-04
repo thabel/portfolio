@@ -1033,7 +1033,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2rem;
-    align-items: center;
+    /* align-items: center; */
     /* height: 100vh; */
   }
   
@@ -1463,15 +1463,17 @@ html {
   /*** BLOG SECTION ***/
   
   .blog {
-    padding-right: 150px;
-    min-height: 460px;
-    position: relative;
+    /* padding-right: 150px;
+    min-height: 460px; */
+    /* position: relative; */
     display: flex;
     align-items: center;
   }
   
   .blog .latestposts {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
   
   .blog .latestposts > div {
@@ -1481,7 +1483,7 @@ html {
   }
   
   .blog .latestposts > div:not(:first-child) {
-    margin-left: 75px;
+    /* margin-left: 75px; */
   }
   
   .blog .latestposts > div a {
@@ -1825,6 +1827,10 @@ html {
   }
   
   @media (max-width: 1024px) {
+    .blog .latestposts {
+    
+    grid-template-columns: 1fr;
+    }
      .portfolio .single-item{
        grid-template-columns: 1fr;
     }
