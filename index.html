@@ -20,7 +20,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+<style>
+    .soft-skills ul{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        gap: 1rem;
+        margin: 4rem 0;
+    }
 
+    .soft-skills ul li{
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+ transition: transform 0.3s ease;
+ 
+    }
+    .soft-skills ul li:hover{
+         transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+</style>
 <body>
     <div>
         <div id="switcher" class="close" style="display:block">
@@ -90,18 +110,19 @@
                         </nav>
                     </div>
                     <div class="mail" style="display: flex; align-items: center; gap: 1rem; margin-top: -1em;">
-                        <a href="assets/resume/thabel KUADJOVI - Resume.pdf" target="_blank" class="custom-btn" download>
-                                            <span>
-                                                Download CV <i class="fa-solid fa-download"></i>
-                                            </span>
-                                        </a>
-                        <a href="mailto:thabelkodjo@gmail.com" style="text-decoration: none; color: inherit;">
- <p>Email :<span>
-                            thabelkodjo@gmail.com
-
-                        </span></p>
+                        <a href="assets/resume/thabel KUADJOVI - Resume.pdf" target="_blank" class="custom-btn"
+                            download>
+                            <span>
+                                Download CV <i class="fa-solid fa-download"></i>
+                            </span>
                         </a>
-                       
+                        <a href="mailto:thabelkodjo@gmail.com" style="text-decoration: none; color: inherit;">
+                            <p>Email :<span>
+                                    thabelkodjo@gmail.com
+
+                                </span></p>
+                        </a>
+
                     </div>
                 </div>
                 <nav class="mobile-menu">
@@ -181,7 +202,8 @@
                                                         :</span><span>Togo</span></span></span></li>
                                         <li><span><span
                                                     class="animated-layer fade-in-up-animation wow animated fadeInUp"><span>Mobility
-                                                        :</span><span>Remote | Casablanca | Rabat </span></span></span></li>
+                                                        :</span><span>Remote | Casablanca | Rabat </span></span></span>
+                                        </li>
                                         <li><span><span
                                                     class="animated-layer fade-in-up-animation wow animated fadeInUp"><span>Langages
                                                         :</span><span>English & French</span></span></span></li>
@@ -197,8 +219,9 @@
                                                     class="animated-layer fade-in-up-animation wow animated fadeInUp"><span>Email
                                                         :</span><span>
 
-                                                            <a href="mailto:thabelkodjo@gmail.com" style="text-decoration: none; color: inherit;">thabelkodjo@gmail.com</a>
-                                                        </span></span></span></li>
+                                                        <a href="mailto:thabelkodjo@gmail.com"
+                                                            style="text-decoration: none; color: inherit;">thabelkodjo@gmail.com</a>
+                                                    </span></span></span></li>
                                         <li><span><span
                                                     class="animated-layer fade-in-up-animation wow animated fadeInUp"><span>Discord
                                                         :</span><span>@thabel</span></span></span></li>
@@ -386,7 +409,7 @@
 
                         </div>
 
-                          <div class="info flex-column-mobile flex-direction-column">
+                        <div class="info flex-column-mobile flex-direction-column" >
                             <div class="custom-title">
                                 <h3>
                                     <span>
@@ -395,42 +418,50 @@
                                     </span>
                                 </h3>
                             </div>
-                            
-                              
-                                <div class="infos">
-                                    <ul>
-                                        <li><span><span
-                                                    class="animated-layer fade-in-up-animation wow animated fadeInUp">Curious and eager to learn new technologies and concepts
-                                                    
-                                                    </span>
-                                                    
-                                                    </li>
-                                       <li><span><span
-                                                    class="animated-layer fade-in-up-animation wow animated fadeInUp">Good at breaking down complex problems into manageable steps
-                                                    </span>
-                                                    
-                                                    </li>
-                                                    <li><span><span
-                                                    class="animated-layer fade-in-up-animation wow animated fadeInUp">Collaborative — comfortable working with teammates and asking for help
-                                                    </span>
-                                                    
-                                                    </li>
-                                                    <li><span><span
-                                                    class="animated-layer fade-in-up-animation wow animated fadeInUp">Focused and committed to delivering quality work on time
-                                                    
-                                                    </span>
-                                                    
-                                                    </li>
-                                                    <li><span><span
-                                                    class="animated-layer fade-in-up-animation wow animated fadeInUp">Open to feedback and continuously looking to improve
-                                                    
-                                                    </span>
-                                                    
-                                                    </li>
-                                    </ul>
-                                   
-                                </div>
-                            
+
+
+                            <div class="soft-skills">
+                                <ul>
+                                    <li><span><span
+                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">
+                                                <span style="color: #ffb400;">Curious</span>
+                                                and eager to learn new technologies and concepts
+
+                                            </span>
+
+                                    </li>
+                                    <li><span><span
+                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">Good
+                                                at <span style="color: #ffb400;"> breaking down complex problems</span> into manageable steps
+                                            </span>
+
+                                    </li>
+                                    <li><span><span
+                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">
+                                                <span style="color: #ffb400;">Collaborative</span>
+                                                — comfortable working with teammates and asking for help
+                                            </span>
+
+                                    </li>
+                                    <li><span><span
+                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">Focused
+                                                and committed <span style="color: #ffb400;">to delivering quality</span> work on time
+
+                                            </span>
+
+                                    </li>
+                                    <li><span><span
+                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">
+                                               <span style="color: #ffb400;"> Open
+                                                to feedback</span> and continuously looking to improve
+
+                                            </span>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
                         </div>
 
                         <div class="resume flex-column-mobile flex-direction-column gap-4" style="margin-top: 3rem;">
@@ -492,7 +523,8 @@
                                     <li>
                                         <div class="animated-layer fade-in-up-animation fadeInUp wow">
                                             <div class="education">
-                                                <h4>Master's Degree in Cyber Defense and Information Security (CDSI)</h4>
+                                                <h4>Master's Degree in Cyber Defense and Information Security (CDSI)
+                                                </h4>
                                                 <p>
                                                     <i class="fa-regular fa-clock"></i>
                                                     <span>2025</span>
@@ -767,18 +799,20 @@
                     </section>
 
 
-                     <section class="blog main-section flex-column-mobile flex-direction-column gap-4" style="margin-top: 6rem;" id="blog">
-                            <div class="custom-title">
-                                <h3>
-                                    <span>
-                                        <span class="animated-layer fade-in-left-animation fadeInUp wow">Mes Certifications</span>
-                                    </span>
-                                </h3>
-                            </div>
-                            <div class="latestposts flex-column-mobile" id="certificates" style="margin-top: 3rem;">
-                              <!-- is rendered  by JavaScript -->
-                            </div>
-                        </section>
+                    <section class="blog main-section flex-column-mobile flex-direction-column gap-4"
+                        style="margin-top: 6rem;" id="blog">
+                        <div class="custom-title">
+                            <h3>
+                                <span>
+                                    <span class="animated-layer fade-in-left-animation fadeInUp wow">Mes
+                                        Certifications</span>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="latestposts flex-column-mobile" id="certificates" style="margin-top: 3rem;">
+                            <!-- is rendered  by JavaScript -->
+                        </div>
+                    </section>
 
 
                     <section class="contact main-section flex-column-mobile flex-direction-column  gap-4" id="contact"
@@ -823,9 +857,9 @@
                                             <a href="https://github.com/thabel" target="_blank">
                                                 <i class="fa-brands fa-github">
                                                     <!-- Added GitHub profile link -->
-                                               
 
-                                                    </i>
+
+                                                </i>
                                                 </i>
                                             </a>
                                         </li>
@@ -840,10 +874,10 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a  href="https://www.linkedin.com/in/thabel-kuadjovi/" target="_blank">
+                                            <a href="https://www.linkedin.com/in/thabel-kuadjovi/" target="_blank">
                                                 <i class="fa-brands fa-linkedin">
                                                     <!-- Added LinkedIn profile link -->
-                            
+
                                                 </i>
                                             </a>
                                         </li>
