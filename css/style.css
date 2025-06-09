@@ -1786,6 +1786,7 @@ html {
     flex-direction: column;
   }
   @media (min-width: 1025px) {
+   
     body:not(.blog-page) {
       /* overflow: hidden; */
     }
@@ -1827,9 +1828,16 @@ html {
   }
   
   @media (max-width: 1024px) {
+     #soft-skills-list{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .blog .latestposts {
     
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch ;
+    justify-content: stretch;
+    
     }
      .portfolio .single-item{
        grid-template-columns: 1fr;
@@ -2276,12 +2284,13 @@ html {
     }
   
     .blog .latestposts > div:not(:first-child) {
-      margin-left: 0;
-      margin-top: 50px;
+      /* margin-left: 0; */
+      /* margin-top: 50px; */
     }
   
     .blog {
       padding: 85px 30px;
+          margin-top: 0 !important;
     }
   
     .blog .custom-title {
@@ -2396,6 +2405,13 @@ html {
   }
   
   @media screen and (max-width: 767px) {
+    
+    .blog .latestposts {
+    
+    grid-template-columns: 1fr;
+    
+    }
+    
     body {
       font-size: 16px;
     }

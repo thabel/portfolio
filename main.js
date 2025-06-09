@@ -70,8 +70,8 @@
     image: "assets/certifs/Application  se préparer aux métiers de la.jpg",
     description: "Préparation aux carrières de la cybersécurité.",
     date: "2025",
-    organization: "Cisco",
-    category: "Cisco"
+    organization: "Google",
+    category: "Cybersecurity"
   },
   {
     title: "Automatiser les tâches de cybersécurité avec Python",
@@ -86,7 +86,7 @@
     image: "assets/certifs/Connecter et protéger  réseaux et sécurité des reseaux.jpg",
     description: "Sécurisation des réseaux informatiques.",
     date: "2025",
-    organization: "Cisco",
+    organization: "Google",
     category: "Networking"
   },
   {
@@ -126,7 +126,7 @@
     image: "assets/certifs/Coursera cyber secu.jpg",
     description: "Cybersecurity principles and tools.",
     date: "2025",
-    organization: "Coursera",
+    organization: "Coursera & Google",
     category: "Security"
   },
   {
@@ -158,7 +158,7 @@
     image: "assets/certifs/Faire preuve de prudence  gestion des risques de securité.jpg",
     description: "Risk management and incident handling.",
     date: "2025",
-    organization: "Cisco",
+    organization: "Google",
     category: "Security"
   },
   {
@@ -166,7 +166,7 @@
     image: "assets/certifs/Fondamentaux de la cybersécurité.jpg",
     description: "Principes de base de la cybersécurité.",
     date: "2025",
-    organization: "Cisco",
+    organization: "Google",
     category: "Security"
   },
   {
@@ -270,7 +270,7 @@
     image: "assets/certifs/Tirer la sonnette d'alarme  détection et réponse.jpg",
     description: "Detecting and responding to cybersecurity incidents.",
     date: "2025",
-    organization: "Cisco",
+    organization: "Google",
     category: "Security"
   },
   {
