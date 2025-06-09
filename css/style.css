@@ -52,16 +52,17 @@ html {
   }
   
   #wrapper {
-    /* width: 100%; */
-    /* overflow:scroll; */
+    width: 100%;
+    overflow:hidden;
     display: block;
   }
   .border-red {
     border: 1px solid red;
   }
   main {
-    display: block;
+    /* display: flex; */
     flex-wrap: nowrap;
+    align-items: center;
     /* flex-direction: column; */
   }
   
@@ -1054,7 +1055,7 @@ html {
   }
   
   .portfolio .single-item .details {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     /* white-space: nowrap; */
     cursor: grab;
   }
@@ -1063,7 +1064,7 @@ html {
     font-size: 38px;
     line-height: 38px;
     font-weight: 700;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin-bottom: 22px;
   }
   
@@ -1501,8 +1502,8 @@ html {
   }
   
   .blog .latestposts a img {
-    width: 360px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center;
     transition: 0.5s;
@@ -1785,8 +1786,39 @@ html {
     display: none;
     flex-direction: column;
   }
+   @media (min-width: 563px) {
+    #soft-skills-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .blog .latestposts {
+    
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch ;
+    justify-content: stretch;
+    font-size: 14px;
+    
+    }
+  }
+  @media (min-width: 750px) {
+   .portfolio .single-item {
+        grid-template-columns: 1fr 1fr;
+         margin: 1rem;
+         gap: 1rem;
+    }
+    
+    
+  }
   @media (min-width: 1025px) {
-   
+     #soft-skills-list {
+    grid-template-columns: repeat(3, 300px);
+    }
+   .blog .latestposts {
+    
+    grid-template-columns: 1fr  1fr 1fr;
+    gap: 2rem;
+     margin: 0 2rem;
+     
+   }
     body:not(.blog-page) {
       /* overflow: hidden; */
     }
@@ -1802,7 +1834,7 @@ html {
     }
   
     body.body-safari .blog {
-      padding-right: 686px;
+      /* padding-right: 686px; */
     }
   
     body.body-safari .copyright {
@@ -1819,7 +1851,7 @@ html {
     }
   
     body.body-safari .blog .latestposts > div {
-      width: 360px;
+      /* width: 360px; */
     }
   
     .hide-desktop {
@@ -1829,7 +1861,7 @@ html {
   
   @media (max-width: 1024px) {
      #soft-skills-list{
-      grid-template-columns: repeat(2, 1fr);
+      /* grid-template-columns: repeat(2, 1fr); */
     }
 
     .blog .latestposts {
@@ -2172,13 +2204,13 @@ html {
     }
   
     .portfolio .custom-title {
-      margin-bottom: 70px;
+      /* margin-bottom: 70px; */
     }
   
     .swiper-portfolio {
-      padding-right: 0;
-      height: 100%;
-      width: 768px;
+      /* padding-right: 0; */
+      /* height: 100%; */
+      /* width: 768px; */
     }
   
     .portfolio .single-item .main-content,
@@ -2231,9 +2263,9 @@ html {
     }
   
     .portfolio .single-item .details {
-      margin: 30px 0 0;
-      width: 538px;
-      white-space: initial;
+      /* margin: 30px 0 0; */
+      /* width: 538px; */
+      /* white-space: initial; */
     }
   
     .clients {
@@ -2290,25 +2322,25 @@ html {
   
     .blog {
       padding: 85px 30px;
-          margin-top: 0 !important;
+          /* margin-top: 0 !important; */
     }
   
     .blog .custom-title {
-      margin-bottom: 70px;
+      /* margin-bottom: 70px; */
     }
   
     .blog .latestposts > div {
-      width: 538px;
+      /* width: 538px; */
     }
   
     .blog .latestposts a img {
-      width: 538px;
-      height: 300px;
+      /* width: 538px; */
+      /* height: 300px; */
     }
   
     .blog .latestposts a .content span.title {
-      font-size: 25px;
-      line-height: 35px;
+      /* font-size: 25px; */
+      /* line-height: 35px; */
     }
   
     .copyright {
@@ -2362,9 +2394,9 @@ html {
     }
   
     .home {
-      min-width: 100vw;
+      /* min-width: 100vw;
       width: 100vw;
-      height: 100vh;
+      height: 100vh; */
       flex-direction: column;
     }
   
@@ -2501,13 +2533,13 @@ html {
   
     .swiper-portfolio {
       width: 100%;
-      padding-left: 30px;
+      /* padding-left: 30px; */
     }
   
     .portfolio .single-item .main-content,
     .portfolio .single-item .main-content img {
       width: 100%;
-      height: 200px;
+      /* height: 200px; */
     }
   
     .portfolio .single-item .details {
@@ -2629,7 +2661,8 @@ html {
       padding: 20px 0 30px;
     }
   }
-
+ 
 .color-prime{
   color: #ffb400;
 }
+
