@@ -809,7 +809,21 @@
                                 </span>
                             </h3>
                         </div>
-                        <div class="latestposts flex-column-mobile" id="certificates" style="margin-top: 3rem;">
+                        <div class="certificates-filter-container" style="margin-top: 3rem; margin-bottom: 2rem;">
+                            <input type="text" id="cert-search" placeholder="Rechercher une certification..." style="padding: 0.5rem; width: 100%; max-width: 400px; margin-bottom: 1rem; border-radius: 6px; border: 1px solid #ccc;">
+                            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                <select id="cert-category" style="padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;">
+                                    <option value="">Catégorie</option>
+                                </select>
+                                <select id="cert-organization" style="padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;">
+                                    <option value="">Organisation</option>
+                                </select>
+                                <select id="cert-year" style="padding: 0.5rem; border-radius: 6px; border: 1px solid #ccc;">
+                                    <option value="">Année</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="latestposts flex-column-mobile" id="certificates" style="margin-top: 0;">
                             <!-- is rendered  by JavaScript -->
                         </div>
                     </section>

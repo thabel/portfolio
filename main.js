@@ -40,7 +40,7 @@
 
 // certificates displays
 
- const certificates = [
+const certificates = [
   {
     title: "AWS Academy Cloud Foundations",
     image: "assets/certifs/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250128-27-tp32hn.jpg",
@@ -323,9 +323,21 @@
   }
 ];
 
-  const container = document.getElementById("certificates");
+function getYear(dateStr) {
+  // Extrait l'année d'une date type "28 Jan 2025" ou "2025"
+  if (!dateStr) return "";
+  const match = dateStr.match(/\d{4}/);
+  return match ? match[0] : "";
+}
 
-  certificates.forEach(cert => {
+function renderCertificates(list) {
+  const container = document.getElementById("certificates");
+  container.innerHTML = "";
+  if (list.length === 0) {
+    container.innerHTML = '<p style="text-align:center;">Aucune certification trouvée.</p>';
+    return;
+  }
+  list.forEach(cert => {
     const certHTML = `
       <div class="animated-layer fade-in-right-animation fadeInUp wow">
         <a href="#">
@@ -352,4 +364,69 @@
     `;
     container.insertAdjacentHTML("beforeend", certHTML);
   });
+}
+
+function getUniqueValues(key) {
+  // Retourne les valeurs uniques pour un champ donné
+  const values = certificates.map(cert => {
+    if (key === "year") return getYear(cert.date);
+    return cert[key] || "";
+  });
+  return Array.from(new Set(values.filter(Boolean)));
+}
+
+function populateFilters() {
+  // Catégories
+  const catSelect = document.getElementById("cert-category");
+  getUniqueValues("category").forEach(cat => {
+    const opt = document.createElement("option");
+    opt.value = cat;
+    opt.textContent = cat;
+    catSelect.appendChild(opt);
+  });
+  // Organisations
+  const orgSelect = document.getElementById("cert-organization");
+  getUniqueValues("organization").forEach(org => {
+    const opt = document.createElement("option");
+    opt.value = org;
+    opt.textContent = org;
+    orgSelect.appendChild(opt);
+  });
+  // Années
+  const yearSelect = document.getElementById("cert-year");
+  getUniqueValues("year").forEach(year => {
+    const opt = document.createElement("option");
+    opt.value = year;
+    opt.textContent = year;
+    yearSelect.appendChild(opt);
+  });
+}
+
+function filterCertificates() {
+  const search = document.getElementById("cert-search").value.trim().toLowerCase();
+  const category = document.getElementById("cert-category").value;
+  const organization = document.getElementById("cert-organization").value;
+  const year = document.getElementById("cert-year").value;
+  let filtered = certificates.filter(cert => {
+    const matchesSearch =
+      cert.title.toLowerCase().includes(search) ||
+      cert.description.toLowerCase().includes(search) ||
+      cert.organization.toLowerCase().includes(search) ||
+      cert.category.toLowerCase().includes(search);
+    const matchesCategory = category ? cert.category === category : true;
+    const matchesOrganization = organization ? cert.organization === organization : true;
+    const matchesYear = year ? getYear(cert.date) === year : true;
+    return matchesSearch && matchesCategory && matchesOrganization && matchesYear;
+  });
+  renderCertificates(filtered);
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  populateFilters();
+  renderCertificates(certificates);
+  document.getElementById("cert-search").addEventListener("input", filterCertificates);
+  document.getElementById("cert-category").addEventListener("change", filterCertificates);
+  document.getElementById("cert-organization").addEventListener("change", filterCertificates);
+  document.getElementById("cert-year").addEventListener("change", filterCertificates);
+});
 
