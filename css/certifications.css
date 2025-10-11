@@ -1,0 +1,51 @@
+.certificates-filter-container {
+    margin-bottom: 2rem;
+}
+
+.certificates-filter-container input,
+.certificates-filter-container select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.latestposts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.latestposts .animated-layer {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.latestposts .animated-layer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.categories-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-tab {
+    background: transparent;
+    border: 1px solid #ffb400;
+    color: #ffb400;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tab.active, .category-tab:hover {
+    background: #ffb400;
+    color: #111;
+}

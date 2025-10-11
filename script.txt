@@ -1,0 +1,43 @@
+Video Script: Showcase Your Portfolio
+
+**Scene 1: Introduction (Fast-paced, energetic music)**
+
+*   **(Visual):** Quick cuts of your website's most visually appealing sections (e.g., project thumbnails, animations, your photo).
+*   **(Text Overlay):** "From Code to Creation: A Developer's Journey"
+
+**Scene 2: Hook (You on camera, smiling and confident)**
+
+*   **(You):** "Hey everyone! I'm Thabel, a Computer Science Engineer, and I want to give you a quick tour of my new portfolio website."
+*   **(You):** "I've designed it to not only showcase my work but also to be a resource for anyone interested in my skills and projects."
+
+**Scene 3: Home Page Tour (Screen recording of your website)**
+
+*   **(Voiceover):** "Right from the home page, you get a glimpse of who I am and what I do. Clean, simple, and easy to navigate."
+*   **(Visual):** Scroll through the home page, pausing briefly on the header, your intro text, and the skills section.
+
+**Scene 4: Skills Section (Zoom in on the skills section)**
+
+*   **(Voiceover):** "I've highlighted my key skills, from programming languages like Python and JavaScript to frameworks like React and Django. This gives you a quick overview of my technical expertise."
+
+**Scene 5: Projects Showcase (Screen recording of the projects section)**
+
+*   **(Voiceover):** "This is where it gets exciting! I've detailed some of my favorite projects, like this interactive business dashboard built with Django."
+*   **(Visual):** Click on a project to show the details, including the description, tech stack, and a link to the live preview.
+*   **(Voiceover):** "I believe in not just building things, but building things that solve real-world problems."
+
+**Scene 6: Certifications (Screen recording of the certifications section)**
+
+*   **(Voiceover):** "I'm a lifelong learner, and I'm proud of the certifications I've earned. I've made it easy to browse through them with this new filtering system."
+*   **(Visual):** Click on a few category tabs (e.g., 'AWS', 'Cybersecurity', 'AI') to demonstrate the filtering in action.
+*   **(Voiceover):** "Want to see all my certifications? Just click the 'View more' button to head to the dedicated certifications page."
+
+**Scene 7: Contact & Call to Action (You back on camera)**
+
+*   **(You):** "Thanks for taking the tour! I'm always open to new opportunities and collaborations."
+*   **(You):** "You can find all my contact information on the website, including my email and links to my GitHub and LinkedIn profiles."
+*   **(You):** "So, what are you waiting for? Head over to [Your Website Address] and let me know what you think!"
+
+**Scene 8: Outro (Website URL and social media handles on screen)**
+
+*   **(Visual):** Your website URL and social media handles displayed clearly.
+*   **(Music):** Music fades out.
