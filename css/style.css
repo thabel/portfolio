@@ -723,6 +723,9 @@ html {
   }
   
   /* Skills */
+  .hidden-mobile{
+    display: none;
+  }
   
   .about .skills {
     min-height: 460px;
@@ -1805,7 +1808,16 @@ html {
       justify-content: center;
       margin-top: 2rem;
     }
+    .show-mobile{ 
+      display: block;
+    }
    @media (min-width: 563px) {
+    .show-mobile {
+      display: none;
+    }
+    .hidden-mobile {
+      display: block;
+    }
     #soft-skills-list {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -2241,7 +2253,7 @@ html {
     }
   
     .portfolio {
-      padding: 85px 0;
+      /* padding: 85px 0; */
     }
   
     .portfolio .custom-title {
