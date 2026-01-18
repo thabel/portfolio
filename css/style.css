@@ -37,7 +37,15 @@ Version: 1.0
 /*================================================== */
 
 /*** Miscellaneous ***/
-
+:root{
+  --yellow-color: #ffb400;
+}
+.yellow-color{
+  color: var(--yellow-color);
+}
+.bg-yellow{
+  background-color: var(--yellow-color);
+}
 html {
     /* height: 100%; */
   }
@@ -550,9 +558,9 @@ html {
   .home > div > div h1 {
     position: relative;
     z-index: 1;
-    font-size: 150px;
+    font-size: 70px;
     font-weight: 800;
-    line-height: 150px;
+    line-height: 50px;
     margin: 0;
   }
   
@@ -728,8 +736,9 @@ html {
   
   }
   .about .skills .skills-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .about .skills > div > div {
@@ -1787,6 +1796,15 @@ html {
     display: none;
     flex-direction: column;
   }
+
+   .grid-cols-md{
+      display: grid;
+      padding: 0  2rem;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
    @media (min-width: 563px) {
     #soft-skills-list {
       grid-template-columns: repeat(2, 1fr);
@@ -1799,17 +1817,37 @@ html {
     font-size: 14px;
     
     }
+     .card-body p {
+      min-width: 30rem;
+    }
   }
   @media (min-width: 750px) {
+    .card-body p {
+      min-width: 35rem;
+    }
    .portfolio .single-item {
         grid-template-columns: 1fr 1fr;
          margin: 1rem;
          gap: 1rem;
     }
+    .grid-cols-md{
+      display: grid;
+      padding: 0  8rem;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
     
     
   }
   @media (min-width: 1025px) {
+     .grid-cols-md{
+      display: grid;
+      padding: 0  2rem;
+      gap: 2rem;
+      /* max-width: 100rem; */
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
      #soft-skills-list {
     grid-template-columns: repeat(3, 300px);
     }
@@ -2085,12 +2123,14 @@ html {
     }
   
     .about .skills .skills-content {
-      display: grid;
-    grid-template-columns: 1fr 1fr;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   
     .about .skills .custom-title {
-      margin: 70px 0;
+      /* margin: 70px 0; */
     }
   
     .about .skills > div > div {
@@ -2125,7 +2165,7 @@ html {
   
     .about .resume .custom-title {
       margin-bottom: 70px;
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
   
     .about .timeline ol,
@@ -2285,11 +2325,11 @@ html {
     }
   
     .contact {
-      padding: 85px 30px;
+      padding: 0px 30px;
     }
   
     .contact .custom-title {
-      margin-bottom: 70px;
+      /* margin-bottom: 70px; */
     }
   
     .contact .boxes {
@@ -2322,7 +2362,7 @@ html {
     }
   
     .blog {
-      padding: 85px 30px;
+      padding: 16px 30px;
           /* margin-top: 0 !important; */
     }
   
@@ -2577,7 +2617,7 @@ html {
     }
   
     .contact {
-      padding: 85px 30px 15px;
+      /* padding: 85px 30px 15px; */
     }
   
     .contact .boxes > div > div {

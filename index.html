@@ -21,29 +21,31 @@
 
 </head>
 <style>
-    .soft-skills ul{
+    .soft-skills ul {
         display: grid;
-        
+
         gap: 1rem;
         margin: 4rem 0;
     }
 
-    .soft-skills ul li{
+    .soft-skills ul li {
         background: rgba(0, 0, 0, 0.6);
         border-radius: 10px;
         padding: 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
- transition: transform 0.3s ease;
- 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
     }
-    .soft-skills ul li:hover{
-         transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    .soft-skills ul li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 </style>
+
 <body>
     <div>
-    
+
         <div class="page-content ">
 
             <header>
@@ -56,10 +58,11 @@
                                 <!-- <li><span id="about-link" class="">About</span></li> -->
                                 <li><span id="portfolio-link" class="">Projects</span></li>
                                 <li><span id="certificates-link" class="">
-                                      <a href="/portfolio/certifications.html" style="text-decoration: none; color: inherit;">
-                                                    Certificates
-                                    </a>
-                                </span></li>
+                                        <a href="/portfolio/certifications.html"
+                                            style="text-decoration: none; color: inherit;">
+                                            Certificates
+                                        </a>
+                                    </span></li>
                                 <li><span id="contact-link" class="">Contact</span></li>
 
                             </ul>
@@ -111,32 +114,83 @@
                             reprehenderit quo a impedit.
                         </p>
                     </div>
-                    <section class="home image" id="home" style="margin-top: 3rem;">
+                    <section class="home image" id="home" style="margin: 2rem auto;">
                         <div>
-                            <div class="position-relative">
+                            <div>
                                 <h1>
                                     <span>
-                                        <span class="animated-layer animated fadeInUp">Hello<span
-                                                class="animated fadeInUp">.</span></span>
-                                    </span>
-                                    <span class="position-relative">
-                                        <span class="animated-layer animated fadeInUp">I am</span>
-                                        <span class="intro animated-layer animated fadeInUp">
-                                            Computer Science Engineer based in Casablanca
+                                        <span class="animated-layer animated fadeInUp">Welcome
+                                            !
+                                            <span class="animated fadeInUp">.</span>
+
                                         </span>
-                                    </span>
-                                    <span>
-                                        <span class="animated-layer animated fadeInUp">Thabel</span>
+
+
+                                        </a>
                                     </span>
                                 </h1>
+                                <div style="display: flex; justify-content: center;">
+                                    <a href="#projects" class="bg-yellow"
+                                        style="color: white; text-decoration: none; padding: 1rem 2rem; border-radius: 5px; font-weight: bold; margin-top: 2rem;">
+                                        View Projects <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
                             </div>
 
                             <!-- </div><span class="animated-layer animated-btn cta animated fadeInUp"
                             id="cta"><span></span></span> -->
                     </section>
-                    <section class="about main-section flex-column-mobile " style="margin-top: 3rem;" id="about">
-                        
-                        <div class="skills flex-column-mobile flex-direction-column gap-6" style="margin-top: 3rem;">
+
+                    <section class="about main-section flex-column-mobile " id="aboutme">
+
+                        <div class="skills flex-column-mobile flex-direction-column gap-6">
+                            <div class="custom-title">
+                                <h3>
+                                    <span>
+                                        <span class="animated-layer fade-in-left-animation fadeInUp wow">About Me</span>
+                                    </span>
+                                </h3>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content: center; max-width: 40rem;">
+                                <ul>
+                                    <li>
+                                        <span class="animated-layer fade-in-up-animation wow animated fadeInUp">
+                                            <span style="color: #ffb400;">I’m Thabel KUADJOVI</span>, a computer science
+                                            engineer
+                                            driven by curiosity and purpose, specializing in
+                                            <span style="color: #ffb400;">Artificial Intelligence and
+                                                Cybersecurity</span>.
+                                            My journey into tech goes beyond academics — it’s rooted in a deep
+                                            fascination
+                                            with building intelligent systems that are both impactful and secure.
+                                            <br><br>
+                                            I thrive on turning <span style="color: #ffb400;">complex problems into real
+                                                solutions</span>,
+                                            whether through data, algorithms, or secure system design. Every project I
+                                            work on
+                                            is an opportunity to learn, improve, and push my limits.
+                                            <br><br>
+                                            Today, I’m seeking <span style="color: #ffb400;">new professional
+                                                opportunities</span>
+                                            where I can grow alongside ambitious teams, contribute meaningfully, and
+                                            help build
+                                            technology that truly matters.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </section>
+
+                    <section class="about main-section flex-column-mobile " id="about">
+
+                        <div class="skills flex-column-mobile flex-direction-column gap-6">
                             <div class="custom-title">
                                 <h3>
                                     <span>
@@ -145,170 +199,156 @@
                                     </span>
                                 </h3>
                             </div>
-                            <p>Programming Languages</p>
-                            <div class="skills-content gap-6">
-                                <!-- Skill Group 1 -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-python-plain colored"></i></span>
-                                        <h4>Python</h4>
-                                    </div>
+
+                            <div class="card "
+                                style="background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header" style="border-bottom: 1px solid white;">
+                                    <h4>Programming Languages</h4>
                                 </div>
+                                <div class="card-body" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p style="max-width: 35rem;">
+                                        Here are some of the technical skills and technologies I have experience
+                                        with:
+                                    </p>
+                                    <ul
+                                        style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: space-between;">
+                                        <li>
+                                            <span><i class="devicon-python-plain colored"></i></span>
+                                            <span>Python</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-javascript-plain colored"></i></span>
+                                            <span>JavaScript</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-php-plain colored"></i></span>
+                                            <span>PHP</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-java-plain colored"></i></span>
+                                            <span>Java</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-c-plain colored"></i></span>
+                                            <span>C</span>
+                                        </li>
 
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-javascript-plain colored"></i></span>
-                                        <h4>JavaScript</h4>
-                                    </div>
-                                </div>
-
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-php-plain colored"></i></span>
-                                        <h4>PHP</h4>
-                                    </div>
-                                </div>
-
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-java-plain colored"></i></span>
-                                        <h4>Java</h4>
-                                    </div>
-                                </div>
-
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-c-plain colored"></i></span>
-                                        <h4>C</h4>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                            <p>Frameworks and Libraries</p>
-
-                            <div class="skills-content gap-6">
-
-                                <!-- Flask (uses Python icon) -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-python-plain colored"></i></span>
-                                        <h4>Flask</h4>
-                                    </div>
-                                </div>
-
-                                <!-- React -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-react-original colored"></i></span>
-                                        <h4>React</h4>
-                                    </div>
-                                </div>
-
-                                <!-- Django (uses Python icon) -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-python-plain colored"></i></span>
-                                        <h4>Django</h4>
-                                    </div>
-                                </div>
-
-                                <!-- Next.js (uses JavaScript icon as Devicon doesn't yet support Next.js) -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-javascript-plain colored"></i></span>
-                                        <h4>Next.js</h4>
-                                    </div>
-                                </div>
-
-                                <!-- React Native with Expo (uses React icon) -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-react-original colored"></i></span>
-                                        <h4>React Native</h4>
-                                    </div>
+                                    </ul>
                                 </div>
 
                             </div>
-
-
-                            <p>Databases</p>
-
-                            <div class="skills-content gap-6">
-
-                                <!-- MySQL -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-mysql-plain colored"></i></span>
-                                        <h4>MySQL</h4>
-                                    </div>
+                            <!-- cards for frameworks -->
+                            <div class="card "
+                                style="background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header" style="border-bottom: 1px solid white;">
+                                    <h4>Frameworks & Technologies</h4>
                                 </div>
+                                <div class="card-body" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p style="max-width: 35rem;">
+                                        Here are some of the frameworks and technologies I have worked with:
+                                    </p>
+                                    <ul
+                                        style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: space-between; max-width: 35rem;">
+                                        <li>
+                                            <span><i class="devicon-flask-plain "></i></span>
+                                            <span>Flask</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-react-original colored"></i></span>
+                                            <span>React</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-django-plain-wordmark"></i>
+                                            </span>
+                                            <span>Django</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-nextjs-original "></i></span>
+                                            <span>Next.js</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-laravel-plain colored"></i></span>
+                                            <span>Laravel</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-symfony-plain "></i></span>
+                                            <span>Symfony</span>
+                                        </li>
 
-                                <!-- PostgreSQL -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-postgresql-plain colored"></i></span>
-                                        <h4>PostgreSQL</h4>
-                                    </div>
+                                        <li>
+                                            <span><i class="devicon-flutter-plain colored"></i></span>
+                                            <span>Flutter</span>
+                                        </li>
                                 </div>
-
-                                <!-- MongoDB -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-mongodb-plain colored"></i></span>
-                                        <h4>MongoDB</h4>
-                                    </div>
-                                </div>
-
-
                             </div>
 
-                            <p>Cloud & DevOps</p>
 
-                            <div class="skills-content gap-6">
-
-                                <!-- Git -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-git-plain colored"></i></span>
-                                        <h4>Git</h4>
-                                    </div>
+                            <!-- Cards for databases -->
+                            <div class="card "
+                                style="background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header" style="border-bottom: 1px solid white;">
+                                    <h4>Databases</h4>
                                 </div>
+                                <div class="card-body" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p style="max-width: 35rem;">
+                                        Here are some of the databases I have experience with:
+                                    </p>
+                                    <ul
+                                        style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: space-between; max-width: 35rem;">
+                                        <li>
+                                            <span><i class="devicon-mysql-plain colored"></i></span>
+                                            <span>MySQL</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-postgresql-plain colored"></i></span>
+                                            <span>PostgreSQL</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-mongodb-plain colored"></i></span>
+                                            <span>MongoDB</span>
+                                        </li>
 
-                                <!-- Linux -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-linux-plain" style="color: white;"></i></span>
-                                        <h4>Linux</h4>
-                                    </div>
                                 </div>
+                            </div>
 
 
-                                <!-- Docker -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-docker-plain colored"></i></span>
-                                        <h4>Docker</h4>
-                                    </div>
+
+
+                            <!-- Cards for Cloud & DevOps -->
+                            <div class="card "
+                                style="background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header" style="border-bottom: 1px solid white;">
+                                    <h4>Cloud & DevOps</h4>
                                 </div>
+                                <div class="card-body" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p style="max-width: 35rem;">
+                                        Here are some of the cloud and DevOps tools I have experience with:
+                                    </p>
+                                    <ul
+                                        style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: space-between; max-width: 35rem;">
+                                        <li>
+                                            <span><i class="devicon-git-plain colored"></i></span>
+                                            <span>Git</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-linux-plain" style="color: white;"></i></span>
+                                            <span>Linux</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-docker-plain colored"></i></span>
+                                            <span>Docker</span>
+                                        </li>
+                                        <li>
+                                            <span><i
+                                                    class="devicon-amazonwebservices-plain-wordmark colored"></i></span>
+                                            <span>AWS</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="devicon-azure-plain colored"></i></span>
+                                            <span>Azure</span>
+                                        </li>
 
-                                <!-- AWS -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-amazonwebservices-plain-wordmark colored"></i></span>
-                                        <h4>AWS</h4>
-                                    </div>
                                 </div>
-
-                                <!-- Azure -->
-                                <div class="skill-group">
-                                    <div class="animated-layer fade-in-down-animation fadeInLeft wow">
-                                        <span><i class="devicon-azure-plain colored"></i></span>
-                                        <h4>Azure</h4>
-                                    </div>
-                                </div>
-
                             </div>
 
 
@@ -316,367 +356,171 @@
 
                         </div>
 
-                        <div class="info flex-column-mobile flex-direction-column" >
-                            <div class="custom-title">
-                                <h3>
-                                    <span>
-                                        <span class="animated-layer fade-in-left-animation fadeInUp wow">My
-                                            Softs Skills</span>
-                                    </span>
-                                </h3>
-                            </div>
 
 
-                            <div class="soft-skills">
-                                <ul id="soft-skills-list">
-                                    <li><span><span
-                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">
-                                                <span style="color: #ffb400;">Curious</span>
-                                                and eager to learn new technologies and concepts
 
-                                            </span>
-
-                                    </li>
-                                    <li><span><span
-                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">Good
-                                                at <span style="color: #ffb400;"> breaking down complex problems</span> into manageable steps
-                                            </span>
-
-                                    </li>
-                                    <li><span><span
-                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">
-                                                <span style="color: #ffb400;">Collaborative</span>
-                                                — comfortable working with teammates and asking for help
-                                            </span>
-
-                                    </li>
-                                    <li><span><span
-                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">Focused
-                                                and committed <span style="color: #ffb400;">to delivering quality</span> work on time
-
-                                            </span>
-
-                                    </li>
-                                    <li><span><span
-                                                class="animated-layer fade-in-up-animation wow animated fadeInUp">
-                                               <span style="color: #ffb400;"> Open
-                                                to feedback</span> and continuously looking to improve
-
-                                            </span>
-
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                        <div class="resume flex-column-mobile flex-direction-column gap-4" style="margin-top: 3rem;">
-                            <div class="custom-title fadeInUp wow">
-                                <h3>
-                                    <span>
-                                        <span class="animated-layer fade-in-left-animation">My Resume</span>
-                                    </span>
-                                </h3>
-                            </div>
-                            <div class="timeline">
-                                <ol class="animated-layer fade-in-animation">
-                                    <li>
-                                        <div class="animated-layer fade-in-down-animation fadeInUp wow">
-                                            <div class="experience">
-                                                <h4>Full Stack Developer Intern</h4>
-                                                <p>
-                                                    <i class="fa-regular fa-clock"></i>
-                                                    <span>2023 - Now</span>
-                                                </p>
-                                                <p>
-                                                    <i class="fa-regular fa-building"></i>
-                                                    <span>RHOBS - Paris</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="animated-layer fade-in-down-animation fadeInUp wow">
-                                            <div class="experience">
-                                                <h4>Machine Learning Intern</h4>
-                                                <p>
-                                                    <i class="fa-regular fa-clock"></i>
-                                                    <span>May 2024 - July 2024</span>
-                                                </p>
-                                                <p>
-                                                    <i class="fa-regular fa-building"></i>
-                                                    <span>HISNEO - Casablanca</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="animated-layer fade-in-up-animation fadeInUp wow">
-                                            <div class="experience">
-                                                <h4>Engineer in Computer Science and AI</h4>
-                                                <p>
-                                                    <i class="fa-regular fa-clock"></i>
-                                                    <span>2020 - 2025</span>
-                                                </p>
-                                                <p>
-                                                    <i class="fa-regular fa-building"></i>
-                                                    <span>HESTIM (school)</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="animated-layer fade-in-up-animation fadeInUp wow">
-                                            <div class="education">
-                                                <h4>Master's Degree in Cyber Defense and Information Security (CDSI)
-                                                </h4>
-                                                <p>
-                                                    <i class="fa-regular fa-clock"></i>
-                                                    <span>2025</span>
-                                                </p>
-                                                <p>
-                                                    <i class="fa-solid fa-building-columns"></i>
-                                                    <span>INSA -partnership with HESTIM</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="animated-layer fade-in-down-animation fadeInUp wow">
-                                            <div class="education">
-                                                <h4>Scientific Baccalaureate</h4>
-                                                <p>
-                                                    <i class="fa-regular fa-clock"></i>
-                                                    <span>2020</span> <!-- Replace with actual year -->
-                                                </p>
-                                                <p>
-                                                    <i class="fa-solid fa-building-columns"></i>
-                                                    <span>Lome</span> <!-- Replace with actual school -->
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li></li>
-                                </ol>
-                            </div>
-                        </div>
                         <!-- <img alt="" class="separator hide-mobile" src="assets/separator.png" /> -->
                     </section>
                     <!-- certificates TODO -->
 
 
                     <!-- <img alt="" class="separator-mobile-up hide-desktop z-1" src="assets/separator-mobile-up.png" /> -->
-                   
+
                     <section class="portfolio main-section flex-column-mobile flex-direction-column  gap-4"
-                        style="margin-top: 6rem;" id="portfolio">
+                        id="portfolio">
                         <div class="custom-title">
                             <h3>
                                 <span>
-                                    <span class="animated-layer fade-in-left-animation fadeInUp wow">My Portfolio</span>
+                                    <span class="animated-layer fade-in-left-animation fadeInUp wow">Projects</span>
                                 </span>
                             </h3>
                         </div>
-                        <div class="flex swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
-                            data-wow-offset="200">
-                            <div class="swiper-wrapper flex flex-direction-column" style="gap: 2rem;">
-                                <div class="swiper-slide single-item">
-                                    <div class="main-content">
-                                        <video class="img-fluid" src="assets/portfolio/protoflio_image_django.mp4"
-                                            controls style="width:100%;height:auto;">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                    <div class="details">
-                                        <h4>How I Can Help Your Business</h4>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-file-lines"></i>
-                                                        Solution :
-                                                    </span>
-                                                    <span>Interactive Business Dashboard</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-user"></i>
-                                                        Built For :
-                                                    </span>
-                                                    <span>Vinea (Inventory & Sales Insights)</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-hourglass"></i>
-                                                        Delivery Time :
-                                                    </span>
-                                                    <span>3 Months</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-solid fa-code-branch"></i>
-                                                        Tech Stack :
-                                                    </span>
-                                                    <span>Django (Python) </span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        Features :
-                                                    </span>
-                                                    <span>
-                                                        Integrated SQL database operations and developed machine
-                                                        learning models to forecast next month's sales based on
-                                                        historical trends.
-                                                    </span>
-                                                </li>
+                        <div style="display: flex; align-items: center; justify-content: center; max-width: 40rem;">
+                            <ul>
+                                <li>
+                                    <span class="animated-layer fade-in-up-animation wow animated fadeInUp">
+                                        Here are some of the projects I have worked on, showcasing my skills in
+                                        software development, web applications, and problem-solving.
+                                    </span>
+                                </li>
+                            </ul>
 
-                                            </ul>
-                                        </div>
-<!-- 
-                                        <a href="https://thabel.pythonanywhere.com/" target="_blank" class="custom-btn">
-                                            <span>
-                                                See It in Action <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                            </span>
-                                        </a> -->
-                                    </div>
 
-                                </div>
-                                <div class="swiper-slide single-item">
-                                    <div class="main-content">
-                                        <img class="img-fluid" src="assets/portfolio/candiate-space.png"
-                                            alt="Image Project" />
-                                    </div>
-                                    <div class="details">
-                                        <h4>Candidate Space Project</h4>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-file-lines"></i>
-                                                        Project :
-                                                    </span>
-                                                    <span>Web app for creating cv based on job offers</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-user"></i>
-                                                        Client :
-                                                    </span>
-                                                    <span>Personal</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-hourglass"></i>
-                                                        Duration :
-                                                    </span>
-                                                    <span>3 months</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-solid fa-code-branch"></i>
-                                                        Frameworks :
-                                                    </span>
-                                                    <span>Next JS </span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        Features :
-                                                    </span>
-                                                    <span>
-                                                        Use AI to generate CVs based on job offers, allowing users
-                                                        to create tailored CVs that match specific job requirements.
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- <a href="#" target="_blank" class="custom-btn">
-                                            <span>
-                                                preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                            </span>
-                                        </a> -->
-                                    </div>
-                                </div>
-                                <div class="swiper-slide single-item">
-                                    <div class="main-content">
-                                        <img class="img-fluid" src="assets/portfolio/math_utilities.png"
-                                            alt="Image Project" />
-                                    </div>
-                                    <div class="details">
-                                        <h4>Maths Utilities project</h4>
-                                        <div>
-                                            <ul>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-file-lines"></i>
-                                                        Project :
-                                                    </span>
-                                                    <span>Website that develop math problems solving tools</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-user"></i>
-                                                        Client :
-                                                    </span>
-                                                    <span>Personal</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-regular fa-hourglass"></i>
-                                                        Duration :
-                                                    </span>
-                                                    <span>Ongoing</span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa-solid fa-code-branch"></i>
-                                                        Frameworks :
-                                                    </span>
-                                                    <span>Php</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- <a href="https://maths.infinityfreeapp.com/?i=1" target="_blank"
-                                            class="custom-btn">
-                                            <span>
-                                                preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                            </span>
-                                        </a> -->
-                                    </div>
-                                </div>
-
-                            </div>
 
                         </div>
+                        <div class="grid-cols-md">
+                            <div class="card"
+                                style=" background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header">
+                                    <span style="color: #ffb400;"> Projects #1 - </span>
+                                    Stock management dashboard
+                                </div>
+                                <div class="card-body">
+                                    <span>
+                                        A <span style="color: #ffb400;">web-based inventory management dashboard</span>
+                                        built with
+                                        <span style="color: #ffb400;">Django and Python</span>, designed to help
+                                        businesses
+                                        <span style="color: #ffb400;">monitor stock levels</span>,
+                                        track inventory movements in real time, and
+                                        generate actionable reports for
+                                        <span style="color: #ffb400;">data-driven decision-making</span>.
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <span>View project video ( no audio )</span>
+                                    <video class="img-fluid" src="assets/portfolio/protoflio_image_django.mp4" controls
+                                        style="width:100%;height:auto;">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+
+
+                            <div class="card"
+                                style=" background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header">
+                                    <span style="color: #ffb400;"> Projects #2 - </span>
+                                    Cv generator web app
+                                </div>
+                                <div class="card-body">
+                                    <span>
+                                        A <span style="color: #ffb400;">web application</span> that leverages
+                                        <span style="color: #ffb400;">AI technology</span> to help users create tailored
+                                        CVs
+                                        based on specific job offers.
+                                        By analyzing job descriptions, the app generates customized CVs that highlight
+                                        relevant
+                                        skills and experiences,
+                                        increasing users' chances of landing interviews.
+                                    </span>
+                                </div>
+                                <div class="card-footer">
+                                    <span>View project video</span>
+                                    <video class="img-fluid" src="assets/portfolio/candidate_space.mp4" controls
+                                        style="width:100%;height:auto;">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+
+                            <div class="card"
+                                style="  background-color: #222; border-radius: 10px; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="card-header">
+                                    <span style="color: #ffb400;"> Projects #3 - </span>
+                                    Maths Utilities project
+                                </div>
+                                <div class="card-body">
+                                    <span>
+                                        A <span style="color: #ffb400;">web application</span> that offers a suite of
+                                        mathematical tools and utilities to assist users in solving various math
+                                        problems.
+                                        The platform provides functionalities such as equation solving, graph plotting,
+                                        and
+                                        statistical analysis,
+                                        making it a valuable resource for students, educators, and professionals alike.
+                                    </span>
+
+                                </div>
+                                <div class="card-footer">
+                                    <span>View project video</span>
+                                      <video class="img-fluid" src="assets/portfolio/math_utilities.mp4" controls
+                                            style="width:100%;height:auto;">
+                                        Your browser does not support the video tag.
+                                      </video>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                      
                     </section>
 
 
-                    <section class="blog main-section flex-column-mobile flex-direction-column gap-4"
-                        style="margin-top: 6rem;" id="blog">
+
+                    <section class="blog main-section flex-column-mobile flex-direction-column gap-4" id="blog">
                         <div class="custom-title">
                             <h3>
                                 <span>
-                                    <span class="animated-layer fade-in-left-animation fadeInUp wow">Mes
+                                    <span class="animated-layer fade-in-left-animation fadeInUp wow">
                                         Certifications</span>
                                 </span>
                             </h3>
+
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; max-width: 40rem;">
+                            <ul>
+                                <li>
+                                    <span class="animated-layer fade-in-up-animation wow animated fadeInUp">
+                                        I have earned several <span style="color: #ffb400;">certifications</span> that
+                                        validate my skills and knowledge in various
+                                        domains of computer science, including <span style="color: #ffb400;">Artificial
+                                            Intelligence</span>, <span style="color: #ffb400;">Cybersecurity</span>, and
+                                        <span style="color: #ffb400;">Software Development</span>. These certifications
+                                        reflect my commitment to <span style="color: #ffb400;">continuous
+                                            learning</span>
+                                        and professional growth in the ever-evolving tech landscape.
+
+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="margin: 1rem auto;">
+                            <a href="/certifications.html" class="bg-yellow"
+                                style="color: white; text-decoration: none; padding: 1rem 2rem; border-radius: 5px; font-weight: bold; margin-top: 2rem;">
+                                View certifications <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
                         </div>
 
-                        <div class="certificates-filter-container" style="margin-top: 3rem; margin-bottom: 2rem;">
-                            <div id="cert-categories" class="categories-tabs">
-                                <!-- Categories will be inserted here by JavaScript -->
-                            </div>
-                        </div>
 
-                        <div class="latestposts flex-column-mobile" id="certificates" style="margin-top: 0;">
-                            <!-- is rendered  by JavaScript -->
-                        </div>
+
                     </section>
 
 
-                    <section class="contact main-section flex-column-mobile flex-direction-column  gap-4" id="contact"
-                        style="margin-top: 3rem;">
+                    <section class="contact main-section flex-column-mobile flex-direction-column  gap-4" id="contact">
                         <div class="custom-title">
                             <h3>
                                 <span>
@@ -711,7 +555,7 @@
                                 </div>
                                 <div class="animated-layer fade-in-up-animation fadeInUp wow">
                                     <i class="fa fa-share-nodes"></i>
-                                    <span class="small-text">follow me</span>
+                                    <span class="small-text">Socials</span>
                                     <ul class="social">
                                         <li>
                                             <a href="https://github.com/thabel" target="_blank">
@@ -723,16 +567,8 @@
                                                 </i>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa-brands fa-dribbble"></i>
-                                            </a>
-                                        </li>
+
+
                                         <li>
                                             <a href="https://www.linkedin.com/in/thabel-kuadjovi/" target="_blank">
                                                 <i class="fa-brands fa-linkedin">
